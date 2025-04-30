@@ -7,7 +7,6 @@ pipeline {
                 docker {
                     image 'node:18-alpine'
                     reuseNode true
-                    args '-v /var/run/docker.sock:/var/run/docker.sock'
                 }
             }
             steps {
